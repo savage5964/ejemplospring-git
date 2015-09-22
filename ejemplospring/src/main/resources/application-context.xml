@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- new Martillo(); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Martillo" id = "martillo"></bean>
+	<!-- new Jeringa(); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Jeringa" id = "jeringa"></bean>
+	<!-- new Computadora(); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Computadora" id = "computadora"></bean>
+	
+
+	<!-- creacion de personas -->
+	<!-- Carpintero carpintero = new Carpintero(martillo); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Carpintero" id = "carpintero">
+		<constructor-arg name = "herramienta" ref = "martillo"></constructor-arg>
+	</bean>
+	<!-- Medico medico = new Medico(jeringa); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Medico" id = "medico">
+		<constructor-arg name = "herramienta" ref = "jeringa"></constructor-arg>
+	</bean>
+	<!-- Programador programador = new Programador(computadora); -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Programador" id = "programador">
+		<constructor-arg name = "herramienta" ref = "computadora"></constructor-arg>
+	</bean>
+
+</beans>
