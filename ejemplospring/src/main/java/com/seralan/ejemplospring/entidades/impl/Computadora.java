@@ -2,6 +2,11 @@ package com.seralan.ejemplospring.entidades.impl;
 
 import com.seralan.ejemplospring.entidades.Herramienta;
 
+/**
+ * 
+ * @author TOSHIBA
+ *
+ */
 public class Computadora implements Herramienta{
 
 	@Override
