@@ -16,9 +16,15 @@ public class CreacionDeBeans {
 
 		Herramienta martillo = (Martillo) factory.getBean("martillo");
 		System.out.println(martillo.getDescripcion());
+		System.out.println(martillo.getContador());
+		
+		Herramienta martillo2 = (Herramienta) factory.getBean("martillo");
+		System.out.println(martillo2.getContador());
 		
 		Persona persona = (Persona) factory.getBean("medico");
 		System.out.println(persona);
+		
+		
 		
 	}
 

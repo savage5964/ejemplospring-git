@@ -4,7 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- new Martillo(); -->
-	<bean class = "com.seralan.ejemplospring.entidades.impl.Martillo" id = "martillo"></bean>
+	<!-- <bean class = "com.seralan.ejemplospring.entidades.impl.Martillo" id = "martillo" scope="prototype"></bean> -->
+	<bean class = "com.seralan.ejemplospring.entidades.impl.Martillo" id = "martillo" scope="singleton"></bean>
 	<!-- new Jeringa(); -->
 	<bean class = "com.seralan.ejemplospring.entidades.impl.Jeringa" id = "jeringa"></bean>
 	<!-- new Computadora(); -->

@@ -9,6 +9,8 @@ import com.seralan.ejemplospring.entidades.Herramienta;
  */
 public class Computadora implements Herramienta{
 
+	
+	
 	@Override
 	public String getDescripcion() {
 		// TODO Auto-generated method stub
@@ -18,6 +20,12 @@ public class Computadora implements Herramienta{
 	@Override
 	public String toString() {
 		return getDescripcion();
+	}
+
+	@Override
+	public int getContador() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

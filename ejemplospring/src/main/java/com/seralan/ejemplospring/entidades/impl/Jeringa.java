@@ -13,5 +13,10 @@ public class Jeringa implements Herramienta {
 	public String toString() {
 		return getDescripcion();
 	}
+	@Override
+	public int getContador() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

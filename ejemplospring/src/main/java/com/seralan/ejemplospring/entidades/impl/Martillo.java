@@ -4,6 +4,12 @@ import com.seralan.ejemplospring.entidades.Herramienta;
 
 public class Martillo implements Herramienta {
 
+	public Martillo(){
+		System.out.println("Creando martillo");
+	}
+	
+	private int c = 0;
+	
 	@Override
 	public String getDescripcion() {
 		// TODO Auto-generated method stub
@@ -13,6 +19,12 @@ public class Martillo implements Herramienta {
 	@Override
 	public String toString() {
 		return getDescripcion();
+	}
+
+	@Override
+	public int getContador() {
+		c++;
+		return c;
 	}
 
 }
